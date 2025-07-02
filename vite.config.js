@@ -10,5 +10,6 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
+  // Add base path for deployment
    base: '/',
 })
