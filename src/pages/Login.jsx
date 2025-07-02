@@ -4,6 +4,7 @@ import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import api from "../services/api";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext";
+import { Link } from "react-router-dom";
 
 const { Title } = Typography;
 
@@ -137,8 +138,8 @@ export default function Login() {
 
         <div style={{ textAlign: 'center', marginTop: 16 }}>
           <p style={{ color: '#666', margin: 0 }}>
-            Don't have an account? <a href="/register" style={{ color: '#1890ff' }}>Sign up</a>
-          </p>
+  Don't have an account? <Link to="/register" style={{ color: '#1890ff' }}>Sign up</Link>
+</p>
         </div>
       </Card>
     </div>
